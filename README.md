@@ -6,7 +6,7 @@ Basic functionality of select box with the set of divs
 ## Features
 
  * Implement the grid type structure into the select box
- * Fixed eader for the result list
+ * Fixed header for the result list (Data wise Dynamic)
  * Can able to add more number of columns into the search result list
 
 
