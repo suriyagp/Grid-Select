@@ -1,0 +1,46 @@
+<!doctype>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Grid Select Example</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <link rel="stylesheet" href="gridselect.css"/>
+
+</head>
+<style type="text/css">
+.container{
+    width: 70px;
+}
+</style>
+<body ng-app="exampleApp">
+
+<div class="container">
+
+    <div ng-controller="mainCtrl">
+        <grs-hider></grs-hider>
+        <grid-select id="myGrs"
+                         placeholder="myGrs.placeholder" headers="myGrs.headers"
+                         min-chars="myGrs.minChars" default-term="myGrs.defaultTerm"
+                         format-selection="myGrs.formatSelection" get-search-url="myGrs.urlFormer"
+                         search-http-headers="myGrs.searchHttpHeaders" debounce="500" is-more-decider="myGrs.moreDecider"
+                         grs-data-getter="myGrs.dataGetter" on-select="focusQuantity"
+                         on-render="myGrs.onRender" cache-enabled="myGrs.cacheEnabled">
+                    </grid-select>
+    </div>
+</div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-route.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-sanitize.min.js"></script>
+
+    <script src="gridselect.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,163 @@
+.grid-select{
+  position: absolute;
+  width:35%;
+}
+
+.grid-select .selection-area .grid-select-input {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+  background: url("grs-spinner.gif") no-repeat scroll 100% -22px, -moz-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  height: 30px;
+  background: url('grs-down-arrow.png') no-repeat 99%, linear-gradient(to bottom, #ffffff 85%, #eeeeee 99%) 0 0;
+  padding-right: 25px;
+  text-overflow: ellipsis;
+}
+.grid-select .selection-area .up-arrow {
+  background: url('grs-up-arrow.png') no-repeat 99%, linear-gradient(to bottom, #ffffff 85%, #eeeeee 99%) 0 0;
+}
+.grid-select .list-area {
+  visibility: hidden;
+  position	: absolute;
+  margin-top: 30px;
+  top: 1px;
+  z-index: 1010;
+  display: inline-block;
+  padding: 1px;
+  padding-bottom: 5px;
+  text-align: left;
+  border: 1px solid;
+  border-bottom-radius: 4px;
+  background-color: #ffffff;
+  border-color: #1fb5ad !important;
+  border-top: none;
+  outline: 0;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(31, 181, 173, 0.6);
+  white-space: normal;
+  word-break: break-all;
+  max-height: 395px;
+  overflow-y: auto;
+  width: 99%;
+}
+.grid-select .list-area input {
+  width: 100%;
+}
+.grid-select .list-area .grs-search-input {
+  height: 30px;
+  margin: 5px 0px;
+  background: url('grs-search.png') no-repeat 100% -22px, linear-gradient(to bottom, #ffffff 85%, #eeeeee 99%) 0 0;
+}
+.grid-select .list-area .grs-search-input:focus {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 1px rgba(31, 181, 173, 0.6);
+}
+.grid-select .list-area .grs-loading-more {
+  max-height: 35px;
+  padding: 5px 0 5px 10px;
+  margin: -5px 0 -5px 0;
+  background: url(grs-spinner.gif) no-repeat 100%, linear-gradient(to bottom, #eeeeee 85%, #eeeeee 99%) 0 0;
+}
+.grid-select .list-area .grs-options,
+.grid-select .list-area .grs-searching,
+.grid-select .list-area .grs-no-match,
+.grid-select .list-area .grs-min-chars {
+  max-height: 323px;
+}
+.grid-select .list-area .grs-searching {
+  padding: 5px 0 5px 10px;
+  background: #f1f4f7;
+  margin: -5px 0 -5px 0;
+  background: url(grs-spinner.gif) no-repeat 100%, linear-gradient(to bottom, #eeeeee 85%, #eeeeee 99%) 0 0;
+}
+.grid-select .list-area .grs-header {
+  max-height: 33px;
+  font-weight: bold;
+  padding: 6px 20px 4px 10px;
+  background: #f1f4f7;
+  margin-top: -5px;
+}
+.grid-select .list-area .grs-header-cell {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.grid-select .list-area .grs-rows {
+  cursor: pointer;
+  margin-top: -4px;
+  max-height: 290px;
+  overflow-y: auto;
+}
+.grid-select .list-area .grs-rows .grid-option-list {
+  padding: 5px 5px 5px 10px;
+}
+.grid-select .list-area .grs-min-chars {
+  background: #f1f4f7;
+  margin: -5px 0 -5px 0;
+  padding: 5px 0 5px 10px;
+}
+.grid-select .list-area .grs-options {
+  margin-top: -2px;
+}
+.grid-select .list-area .grs-no-match {
+  padding: 5px 0 5px 10px;
+  background: #f1f4f7;
+  margin: -5px 0 -5px 0;
+}
+.grid-select .selection-area .grs-disabled {
+  cursor: not-allowed;
+  background: url(grs-down-arrow.png) no-repeat 99%, linear-gradient(to bottom, #eeeeee 85%, #eeeeee 99%) 0 0;
+  opacity: 1;
+}
+.grid-select .selection-area .isListOpened {
+  border-color: #1fb5ad;
+  border-bottom: none;
+  outline: 0;
+  cursor: pointer;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(31, 181, 173, 0.6);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.grid-select .selection-area input {
+  background-color: #FAFAFA;
+  background-image: none;
+  border: 1px solid #D0DDE9;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  color: #555555;
+  display: block;
+  font-size: 12px;
+  height: 31px;
+  line-height: 1.42857;
+  padding: 6px 12px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  width: 100%;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  cursor: pointer;
+}
+.grid-select .selection-area input:focus {
+  border-color: #1fb5ad;
+  outline: 0;
+  cursor: pointer;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(31, 181, 173, 0.6);
+}
+.grid-select .grs-highlighted {
+  background: #1fb5ad;
+  color: #fff;
+  font-weight: bold;
+}
+.form-control {
+    border: 1px solid #D0DDE9;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset !important;
+    color: #555555;
+    display: block;
+    font-size: 12px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    /*background-color: #FAFAFA;
+    background-image: none;
+    height: 31px;
+    width: 100%;*/
+}
