@@ -14,6 +14,7 @@ Basic functionality of select box with the set of divs
 
 ```html
 <link media="all" rel="stylesheet" type="text/css"  href="gridselect.css" />
+<script src="gridselect.js"></script>
 ```
 
 
@@ -48,7 +49,7 @@ Basic functionality of select box with the set of divs
 
     <script src="app.js"></script>
 </body>
-
+```
 
 ## Conceptions
 
@@ -59,3 +60,8 @@ Basic functionality of select box with the set of divs
 
 * Sankaranandh.T.N
 * Suriya Prakash.G
+
+## Dependencies
+
+* Angular JS
+* Jquery
